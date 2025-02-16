@@ -1,0 +1,234 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* Header */
+  header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background: #ff4a3d;
+  }
+  
+  /* Recipes Page */
+  .recipes {
+    padding: 50px 0;
+  }
+  
+  .recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .recipe-card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .recipe-card img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* Recipe Detail Page */
+  .recipe-detail {
+    padding: 50px 0;
+  }
+  
+  .recipe-detail img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* About Page */
+  .about {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  /* Contact Page */
+  .contact {
+    padding: 50px 0;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact form label {
+    margin-bottom: 5px;
+  }
+  
+  .contact form input, .contact form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact form button {
+    align-self: flex-start;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+  *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #edf1f4;
+    min-height: 100vh;
+}
+.loader
+{
+    display: flex;
+    flex-direction: row;
+}
+.loader div
+{
+    position: relative;
+    width: 40px;
+    height: 200px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 40px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.05,#edf1f4));
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1),
+                -15px -15px -20px #fff,
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                inset 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.loader div::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    border-radius: 40px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1),
+                -15px -15px -20px #fff,
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                inset 5px 5px 5px rgba(0, 0, 0, 0.05);
+    
+
+}
+.loader div::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: inset -5px -5px 5px rgba(0, 0, 0, 0.2), 0 420px 0 400px #2196f3;
+    animation: animate 2.5s ease-in-out infinite;
+    transform: translateY(160px);
+    animation-delay: calc(-0.5s * var(--i));
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(160px);
+        filter: hue-rotate(180deg);
+    }
+    50%
+    {
+        transform: translateY(0px);
+    }
+    100%
+    {
+        transform: translateY(160px);
+        filter: hue-rotate(0deg);
+    }
+}
+body
+{
+    background-image: url(pexels-ella-olsson-572949-1640777.jpg);
+    background-size: cover;
+    background-position: center;
+}
